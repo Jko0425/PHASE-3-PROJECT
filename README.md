@@ -1,12 +1,12 @@
 ![H1N1 vaccine](https://github.com/Jko0425/phase-3-project/blob/main/Images/h1n1%20vaccine.webp)
 # Predicting Flu Vaccination Rate
 ## Table of Contents
-* [Overview](https://github.com/Jko0425/phase-3-project/edit/main/README.md#overview)
-* [Business Problem](https://github.com/Jko0425/phase-3-project/edit/main/README.md#business-problem)
-* [Data](https://github.com/Jko0425/phase-3-project/edit/main/README.md#data)
-* [Models](https://github.com/Jko0425/phase-3-project/edit/main/README.md#models)
-* [Evaluation of the model](https://github.com/Jko0425/phase-3-project/edit/main/README.md#ecaluation-of-the-model)
-* [Conclusion](https://github.com/Jko0425/phase-3-project/edit/main/README.md#conclusion)
+* [Overview](https://github.com/Jko0425/phase-3-project/blob/main/README.md#overview)
+* [Business Problem](https://github.com/Jko0425/phase-3-project/blob/main/README.md#business-problem)
+* [Data](https://github.com/Jko0425/phase-3-project/blob/main/README.md#data)
+* [Models](https://github.com/Jko0425/phase-3-project/blob/main/README.md#models)
+* [Evaluation of the model](https://github.com/Jko0425/phase-3-project/blob/main/README.md#evaluation-of-the-model)
+* [Conclusion](https://github.com/Jko0425/phase-3-project/blob/main/README.md#conclusion)
 
 ## Overview
 In recent events, vaccines have been a controversial topic. From governmental conspiracies to distrust in the health system, the efficiency of vaccines are not enough to get people to medical clinics. It is safe to say that regardless of the research behind vaccines, other variables like doubt and education may impact the patient's decision in receiving the vaccine. We will create several models that will take in all of these variables and predict the most accurate vaccination rate of each patient.
