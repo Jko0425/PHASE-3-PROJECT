@@ -1,5 +1,12 @@
 ![H1N1 vaccine](https://github.com/Jko0425/phase-3-project/blob/main/Images/h1n1%20vaccine.webp)
 # Predicting Flu Vaccination Rate
+## Table of Contents
+* [Overview](https://github.com/Jko0425/phase-3-project/edit/main/README.md#overview)
+* [Business Problem](https://github.com/Jko0425/phase-3-project/edit/main/README.md#business-problem)
+* [Data](https://github.com/Jko0425/phase-3-project/edit/main/README.md#data)
+* [Models](https://github.com/Jko0425/phase-3-project/edit/main/README.md#models)
+* [Evaluation of the model](https://github.com/Jko0425/phase-3-project/edit/main/README.md#ecaluation-of-the-model)
+* [Conclusion](https://github.com/Jko0425/phase-3-project/edit/main/README.md#conclusion)
 
 ## Overview
 In recent events, vaccines have been a controversial topic. From governmental conspiracies to distrust in the health system, the efficiency of vaccines are not enough to get people to medical clinics. It is safe to say that regardless of the research behind vaccines, other variables like doubt and education may impact the patient's decision in receiving the vaccine. We will create several models that will take in all of these variables and predict the most accurate vaccination rate of each patient.
@@ -10,7 +17,17 @@ Many pharmaceutical companies are responsible for producing much of our vaccines
 ## Data
 The data is provided by [Drivendata](https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/). They provide three datasets: training labels, training features, and the test set which is used to make our predictions. The labels contain two target variables: `h1n1_vaccine` and `seasonal_vaccine`, where both labels contain binary values where 0 = No and 1 = Yes. [We will be working with 36 features](https://www.drivendata.org/competitions/66/flu-shot-learning/page/211/#sub_values).
 
-## Results/Analysis
+## Models
+Three models are created in an attempted to find the most accurate. The parameters for each of the models are shown as follows:
+| Model | Parameters |
+| ----- | ---------- |
+| Logistic Regression | solver='liblinear', fit_intercept=False, C=1e12 |
+| KNN Algorithm | p=2, n_neighbors=39 (H1N1), n_neighbors=60 (seasonal) |
+| Decision Tree (H1N1) | min_samples_leaf=161, min_samples_split=0.1, max_leaf_nodes=27, max_depth=4 |
+| Decision Tree (seasonal) | min_samples_leaf=143, min_samples_split=0.1, max_leaf_nodes=41, max_depth=5 |
+Of these three models, the logistic regression returned the most favorable results. The evaluation and metrics of the model are noted.
+
+## Evaluation of the model
 Out of the three models (logistic, nearest neighbor, decision tree) it seems like the model with the greatest accuracy and lowest cost is the logistic model. We then calculate the performance of this model by observing calculating metrics. 
 ### Confusion Matrix:
 It provides a plot that shows the density of each prediction. Starting at the top right and moving counterclockwise, the values tells us the number of false positives, true positives, false negatives, and true negatives.
@@ -38,5 +55,5 @@ __AUC:__ 0.8507245791998279
 
 ## Conclusion
 Based on the results, the model predicts the seasonal vaccination rate more accurately than the H1N1 vaccination rate, despite having a larger cost.
-* __Target demographic__ If a pharmacetical company wishes to push a new vaccine they can focus on people of specific ages and education as these two groups are more likely to be vaccinated.
+* __Target demographic__ If Pfizer does wish to push a H1N1 vaccine they can focus on people of specific ages and education as these two groups are more likely to be vaccinated.
 * __Understanding why vaccines do poorly on certain groups__ On the other hand, the company can investigate why there is such a poor vaccination rate in a specific group. For example, why is there a difference in vaccination rate between races? There may be a social explanation, but a company should understand why these differences exist in order to maximize their profits.
