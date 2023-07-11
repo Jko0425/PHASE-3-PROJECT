@@ -54,7 +54,16 @@ __AUC:__ 0.8292943967586459
 ![ROC seasonal](https://github.com/Jko0425/phase-3-project/blob/main/Images/ROC%20seasonal.png)
 __AUC:__ 0.8507245791998279
 
+## Result of the model
+By feeding in a sample of given variables, the model was able to predict the probability of vaccination for both the seasonal and H1N1 vaccine:
+| Vaccine | Probability |
+| ------- | ----------- |
+| H1N1 | 0.21 |
+| Seasonal | 0.46 |
+
 ## Conclusion
-Based on the results, the model predicts the seasonal vaccination rate more accurately than the H1N1 vaccination rate, despite having a larger cost.
-* __Target demographic__ If Pfizer does wish to push a H1N1 vaccine they can focus on people of specific ages and education as these two groups are more likely to be vaccinated.
+When observing the rate of vaccination, we saw how certain variables affected the rate. Pfizer can focus on these variables:
+* __Target demographic__ If Pfizer does wish to push an H1N1 vaccine they can focus on people of specific ages and education as these two groups are more likely to be vaccinated.
 * __Understanding why vaccines do poorly on certain groups__ On the other hand, the company can investigate why there is such a poor vaccination rate in a specific group. For example, why is there a difference in vaccination rate between races? There may be a social explanation, but a company should understand why these differences exist in order to maximize their profits.
+
+If Pfizer follows the results of the model, they can focus on creating vaccines for the seasonal flu as the model returned higher probabilities of receiving the vaccine.
