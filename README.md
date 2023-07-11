@@ -25,10 +25,11 @@ Three models are created in an attempted to find the most accurate. The paramete
 | KNN Algorithm | p=2, n_neighbors=39 (H1N1), n_neighbors=60 (seasonal) |
 | Decision Tree (H1N1) | min_samples_leaf=161, min_samples_split=0.1, max_leaf_nodes=27, max_depth=4 |
 | Decision Tree (seasonal) | min_samples_leaf=143, min_samples_split=0.1, max_leaf_nodes=41, max_depth=5 |
+
 Of these three models, the logistic regression returned the most favorable results. The evaluation and metrics of the model are noted.
 
 ## Evaluation of the model
-Out of the three models (logistic, nearest neighbor, decision tree) it seems like the model with the greatest accuracy and lowest cost is the logistic model. We then calculate the performance of this model by observing calculating metrics. 
+Out of the three models (logistic, nearest neighbor, decision tree) the logistic model had the greatest accuracy and lowest cost. We then calculate the performance of this model by observing calculating metrics. 
 ### Confusion Matrix:
 It provides a plot that shows the density of each prediction. Starting at the top right and moving counterclockwise, the values tells us the number of false positives, true positives, false negatives, and true negatives.
 ![Confusion matrix h1n1](https://github.com/Jko0425/phase-3-project/blob/main/Images/Confusion%20matrix%20h1n1.png)
