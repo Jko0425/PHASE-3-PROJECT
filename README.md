@@ -70,4 +70,5 @@ If Pfizer follows the results of the model, they can focus on creating vaccines 
 
 ## About the author
 Written and coded by: Joshua Ko
+
 Email: joshuawko@gmail.com
