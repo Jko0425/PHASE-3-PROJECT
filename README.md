@@ -67,3 +67,7 @@ When observing the rate of vaccination, we saw how certain variables affected th
 * __Understanding why vaccines do poorly on certain groups__ On the other hand, the company can investigate why there is such a poor vaccination rate in a specific group. For example, why is there a difference in vaccination rate between races? There may be a social explanation, but a company should understand why these differences exist in order to maximize their profits.
 
 If Pfizer follows the results of the model, they can focus on creating vaccines for the seasonal flu as the model returned higher probabilities of receiving the vaccine.
+
+## About the author
+Written and coded by: Joshua Ko
+Email: joshuawko@gmail.com
