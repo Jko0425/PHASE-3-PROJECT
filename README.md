@@ -66,7 +66,7 @@ When observing the rate of vaccination, we saw how certain variables affected th
 * __Target demographic__ If Pfizer does wish to push an H1N1 vaccine they can focus on people of specific ages and education as these two groups are more likely to be vaccinated.
 * __Understanding why vaccines do poorly on certain groups__ On the other hand, the company can investigate why there is such a poor vaccination rate in a specific group. For example, why is there a difference in vaccination rate between races? There may be a social explanation, but a company should understand why these differences exist in order to maximize their profits.
 
-If Pfizer follows the results of the model, they can focus on creating vaccines for the seasonal flu as the model returned higher probabilities of receiving the vaccine.
+If Pfizer follows the results of the model, they can focus on creating vaccines for the seasonal flu as the model returned higher probabilities of receiving the vaccine. However, the data contained unbalanced classes (which may explain why the model performed so poorly for the H1N1 vaccine rate). If the model was trained with data containing equal positive and negative vaccination cases, the metrics should return favorable and balanced results especially for the H1N1 data. Class imbalances should also be measured for each feature (race, economic status, occupation, etc.)
 
 ## About the author
 Written and coded by: Joshua Ko
