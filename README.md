@@ -2,6 +2,27 @@
 # Predicting Flu Vaccination Rate
 #### By Joshua Ko
 ##### Email: joshuawko@gmail.com
+## Repository Structure
+```bash
+phase-3-project/
+├─ Image/
+│  ├─ Confusion matrix h1n1.png
+│  ├─ Confusion matrix seasonal.png
+│  ├─ ROC seasonal.png
+│  ├─ h1n1 vaccine.webp
+│  ├─ ROC h1n1.png
+│  ├─ Predictions.png
+├─ csv files/
+│  ├─ my_submission.csv
+│  ├─ submission_format.csv
+│  ├─ test_set_features.csv
+│  ├─ training_set_features.csv
+│  ├─ training_set_labels.csv
+├─ .gitignore
+├─ Final.ipynb
+├─ README.md
+├─ presentation.pdf
+```
 ## Table of Contents
 * [Overview](https://github.com/Jko0425/phase-3-project/blob/main/README.md#overview)
 * [Business Problem](https://github.com/Jko0425/phase-3-project/blob/main/README.md#business-problem)
