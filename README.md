@@ -2,27 +2,6 @@
 # Predicting Flu Vaccination Rate
 #### By Joshua Ko
 ##### Email: joshuawko@gmail.com
-## Repository Structure
-```bash
-phase-3-project/
-├─ Image/
-│  ├─ Confusion matrix h1n1.png
-│  ├─ Confusion matrix seasonal.png
-│  ├─ ROC seasonal.png
-│  ├─ h1n1 vaccine.webp
-│  ├─ ROC h1n1.png
-│  ├─ Predictions.png
-├─ csv files/
-│  ├─ my_submission.csv
-│  ├─ submission_format.csv
-│  ├─ test_set_features.csv
-│  ├─ training_set_features.csv
-│  ├─ training_set_labels.csv
-├─ .gitignore
-├─ Final.ipynb
-├─ README.md
-├─ presentation.pdf
-```
 ## Table of Contents
 * [Overview](https://github.com/Jko0425/phase-3-project/blob/main/README.md#overview)
 * [Business Problem](https://github.com/Jko0425/phase-3-project/blob/main/README.md#business-problem)
@@ -90,3 +69,24 @@ When observing the rate of vaccination, we saw how certain variables affected th
 * __Understanding why vaccines do poorly on certain groups__ On the other hand, the company can investigate why there is such a poor vaccination rate in a specific group. For example, why is there a difference in vaccination rate between races? There may be a social explanation, but a company should understand why these differences exist in order to maximize their profits.
 
 If Pfizer follows the results of the model, they can focus on creating vaccines for the seasonal flu as the model returned higher probabilities of receiving the vaccine. However, the data contained unbalanced classes (which may explain why the model performed so poorly in predicting the H1N1 vaccination rate). Additionally, there may also be class imbalances within each features (race, economic status, occupation, etc.). If the model was trained with data containing equal positive and negative vaccination cases, the metrics may return more favorable and balanced results especially for the H1N1 data.
+## Repository Structure
+```bash
+phase-3-project/
+├─ Image/
+│  ├─ Confusion matrix h1n1.png
+│  ├─ Confusion matrix seasonal.png
+│  ├─ ROC seasonal.png
+│  ├─ h1n1 vaccine.webp
+│  ├─ ROC h1n1.png
+│  ├─ Predictions.png
+├─ csv files/
+│  ├─ my_submission.csv
+│  ├─ submission_format.csv
+│  ├─ test_set_features.csv
+│  ├─ training_set_features.csv
+│  ├─ training_set_labels.csv
+├─ .gitignore
+├─ Final.ipynb
+├─ README.md
+├─ presentation.pdf
+```
